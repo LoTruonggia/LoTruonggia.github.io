@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+.navigation {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+.Home , .About , .Project {
+    padding: 50px;
+    color: #FDE6B2;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #FDE6B2;
+}
+body {
+    background-color: #361408;
+    
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(1269057.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 150vh;
+    width: 100%;
+   
+}
+
+.p:hover{
+    opacity: 0.5;
+}
+.h:hover{
+    opacity: 0.5;
+}
+
+.a:hover{
+
+    opacity: 0.5;
+}
+
+.container4{
+    max-width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.5fr 0.5fr ;
+    grid-template-areas: 
+    "aa bb "  "cc dd " ;
+}
+.aa,.bb,.cc,.dd,.ee{
+    margin:0 px;
+     ;
+}
+.aa{
+    
+    grid-area: aa;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    color: #FDE6B2;
+    
+    margin-right: 15%;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+   
+}
+
+.bb{
+    grid-area: bb;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    margin-left: 45%;
+    color: #FDE6B2;
+    margin-bottom: 30%;
+   
+    opacity: 0;
+    transform: translateX(30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+   
+   
+}
+.cc{
+    grid-area: cc;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    margin-right: 15%;
+    color: #FDE6B2;
+    margin-right: 15%;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+   
+   
+    
+}
+.dd{
+    grid-area: dd;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    margin-left: 45%;
+    color: #FDE6B2;
+    margin-bottom: 30%;
+   
+    opacity: 0;
+    transform: translateX(30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+   
+}
+
+
+.bladeee  {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+   
+}
+
+
+.bladeee  {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+   
+   
+}
+
+
+@media screen and (max-width: 1500px ) {
+    .container4{
+            height: 100vh;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 0.25fr 0.25fr  0.25fr 0.25fr        ;
+            grid-template-areas:
+            "aa "
+            "cc"
+            "bb "
+            "dd "
+   
+            ;
+    
+
+        
+
+            
+    }
+    .aa , .cc , .dd , .bb{
+    
+        margin: 0 auto;
+    }
+    }
+
+    
+
+    ::-webkit-scrollbar{
+        width: 12px;
+    }
+    
+    
+    ::-webkit-scrollbar-thumb{
+        background-color: #361408;
+        border-radius: 6px;
+    }
+
+
+    .contact{
+        font-family: 'Rajdhani', sans-serif;
+    font-size: 3em;
+    color: #FDE6B2;
+  
+    }
+    .blade {
+        padding: 100px;
+        width: 50px;
+        height: auto;
+        color: #FDE6B2;
+    }
+    .bladee {
+        
+        font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    color: #FDE6B2;
+    } 
+    footer{
+        margin-top: 100px ;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container5{
+        display: flex;
+        gap: 2em;
+        flex-basis:100% ;
+        margin: auto;
+    }
+    .insta{
+      
+        flex-grow: 1;
+    }
+    .mail{
+       
+        flex-grow: 1;
+    }
+
+    .tel{
+       
+       
+        flex-grow: 1;
+    }
+
+    .insta,.mail,.tel{
+        margin: 50px;
+    }
+    @media screen and (max-width: 1000px ) {
+    .container5{
+            flex-direction: column   ;
+    
+    }
+   
+    }
+
+
+    @keyframes apparition{
+        100%{
+            opacity: 1;
+            transform: none;
+        }
+    }

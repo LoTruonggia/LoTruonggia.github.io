@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+.navigation {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+.Home , .About , .Project {
+    padding: 50px;
+    color: #FDE6B2;
+    font-size: 25px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 1s ease-out forwards;
+}
+a.link{
+    text-decoration: none;
+}
+
+.aa , .bb , .cc {
+    font-family: 'Rajdhani', sans-serif;
+ text-align: center;
+ margin: 20px;
+ color: #FDE6B2;
+ font-size: 20px;
+}
+.aa{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.2s ease-out forwards;
+}
+.bb{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+}
+
+.cc{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.6s ease-out forwards;
+}
+.dd {
+    padding: 30px;
+}
+
+header {
+        
+
+        background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(blade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+}
+
+body {
+    background-color: #150905;
+    height: 100vh;
+    width: 100%;
+}
+.test {
+    content: "";
+    bottom: 0 ;
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient( to top , #150905 , transparent)
+}
+
+a {
+    text-decoration: none;
+    color: #FDE6B2;
+}
+
+.container1 {
+   
+    max-width: 100%;
+    height: 100vh;
+   
+    margin: auto;
+    text-align: center;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr  0.44fr 0.3fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "bb0 bb0 bb0"  "bb11 bb21 bb31" "bb12 bb22 bb32" ;
+
+ }
+
+.bb1 ,.bb2 , .bb3 , .bb0, .bb4, .bb11, .bb12, .bb21, .bb31, .bb32, .bb22 {
+   
+    margin: 50px;
+    
+}
+
+.bb0{
+    grid-area: bb0;
+    font-size: 3em;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FDE6B2
+    
+    
+}
+.bb1{
+    grid-area: bb1;
+    font-size: 2em;
+    color: #FDE6B2
+}
+.bb11{
+    grid-area: bb11;
+    
+}
+.bb12{
+    grid-area: bb12;
+    font-size: 2em;
+    color: #FDE6B2
+}
+.bb2{
+    grid-area: bb2;
+    font-size: 2em;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FDE6B2
+}
+.bb21{
+    grid-area: bb21;
+}
+.bb22{
+    grid-area: bb22;
+    font-size: 2em;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FDE6B2
+}
+
+.bb3{
+    grid-area: bb3;
+    font-size: 2em;
+    color: #FDE6B2
+}
+.bb31{
+    grid-area: bb31;
+
+    
+}
+.bb32{
+    grid-area: bb32;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    color: #FDE6B2
+}
+.bb4{
+    grid-area: bb4;
+    color: #FDE6B2;
+}
+
+.blade {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px #361408;
+    
+}
+.bb12 , .bb22 , .bb32{
+    border: 3px solid #FDE6B2 ;
+    border-radius: 10px;
+    margin-bottom: 110px;
+    
+}
+
+.p:hover{
+    opacity: 0.5;
+}
+.h:hover{
+    opacity: 0.5;
+}
+.a:hover{
+
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px ) {
+.container1{
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr  0.2fr 0.1fr  0.2fr 0.1fr  0.2fr 0.1fr    ;
+        grid-template-areas:
+        "bb0" 
+         
+        "bb11"
+        "bb12"
+        
+        "bb21"
+        "bb22" 
+        
+        "bb31"
+        "bb32" 
+        ;
+
+}
+.bb0, .bb4, .bb11, .bb12, .bb21, .bb31, .bb32, .bb22{
+
+    margin-left: 50px ;
+    margin-right: 50px;
+    
+}
+.bb32,.bb12 ,.bb22{
+ margin-top: 50px;
+}
+
+
+
+ }
+
+
+.boutonphotography:hover {
+    background-color: #FDE6B2;
+    color: #150905;
+    
+}
+.boutonphotographyy:hover{
+    opacity: 0.5;
+}
+
+.boutonphotography{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.boutonblenderr:hover {
+    opacity: 0.5;
+}
+.boutonblender{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+.boutonblender:hover {
+    background-color: #FDE6B2;
+    color: #150905;
+    }
+.bb12:hover{
+        background-color: #FDE6B2
+        
+}
+    
+
+.dd1{
+    grid-area: dd1;
+   
+}
+.dd2{
+    grid-area: dd2;
+    
+}
+.dd3{
+    grid-area: dd3;
+  
+}
+.dd4{
+    grid-area: dd4;
+
+}
+.dd5{
+    grid-area: dd5;
+}
+
+
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.fleche {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.6s ease-out forwards;
+    
+}
+.fleche span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #FDE6B2;
+    border-right: 5px solid #FDE6B2;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+
+
+}
+.fleche span:nth-child(2) {
+    animation-delay: -.2s;
+}
+.fleche span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50% {
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+    
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #361408;
+    border-radius: 6px;
+}
+
+.contact{
+    font-family: 'Rajdhani', sans-serif;
+font-size: 3em;
+color: #FDE6B2;
+
+}
+.bladeee {
+    padding: 100px;
+    width: 50px;
+    height: auto;
+    color: #FDE6B2;
+}
+.bladee {
+    
+    font-family: 'Rajdhani', sans-serif;
+font-size: 2em;
+color: #FDE6B2;
+} 
+footer{
+    margin-top:100px ;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container5{
+    display: flex;
+    gap: 2em;
+    flex-basis:100% ;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.insta{
+  
+    flex-grow: 1;
+}
+.mail{
+   
+    flex-grow: 1;
+}
+
+.tel{
+   
+   
+    flex-grow: 1;
+}
+.insta,.mail,.tel{
+    margin: 50px;
+}
+@media screen and (max-width: 1000px ) {
+    footer{
+        margin-top: 1000px;
+    }
+.container5{
+        flex-direction: column  ;
+
+
+
+
+}
+}
+
